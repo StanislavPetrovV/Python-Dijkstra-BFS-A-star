@@ -20,12 +20,12 @@ def get_click_mouse_pos():
     return (grid_x, grid_y) if click[0] else False
 
 
-# def heuristic(a, b):
-#    return abs(a[0] - b[0]) + abs(a[1] - b[1])
-
-
 def heuristic(a, b):
-   return max(abs(a[0] - b[0]), abs(a[1] - b[1]))
+   return abs(a[0] - b[0]) + abs(a[1] - b[1])
+
+
+# def heuristic(a, b):
+#    return max(abs(a[0] - b[0]), abs(a[1] - b[1]))
 
 
 def dijkstra(start, goal, graph):
